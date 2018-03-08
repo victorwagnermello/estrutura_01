@@ -1,0 +1,111 @@
+
+Conversa aberta. Uma mensagem lida.
+
+Pular para o conteúdo
+Como usar o Gmail com leitores de tela
+Clique aqui para ativar as notificações na área de trabalho para o Gmail.   Saiba mais  Ocultar
+ 
+ 
+Mais 
+4 de 533
+ 
+ED_01
+Entrada
+	x
+victor mello <victor96wagner@gmail.com>
+	
+Anexos21:30 (Há 12 horas)
+	
+para mim
+
+2 anexos
+	
+Clique aqui para Responder ou Encaminhar
+0,74 GB (4%) de 15 GB usados
+Gerenciar
+Termos de Serviço - Privacidade
+Última atividade da conta: Há 18 minutos
+Detalhes
+	
+	
+
+#include <iostream>
+#include "stdio.h"
+using namespace std;
+
+int main(){
+	
+	int dado[100];
+	int dado2[100];
+	int n;
+	int m;
+	int aux3;
+	scanf("%d",&n);
+	
+	
+	for(int i=0;i<n;i++){
+		
+		scanf("%d",&dado[i]);
+		
+	}
+		
+	for( int i=0;i<n;i++){
+		for(int j=i+1;j<n;j++){
+		
+			if(dado[i] > dado[j]){
+				 aux3 = dado[i];
+             	dado[i] = dado[j];
+             	dado[j] = aux3;
+            
+			}
+		
+		}
+	}
+	
+	
+	
+	
+
+scanf("%d",&m);
+	for(int i=0;i<m;i++){
+		
+		scanf("%d",&dado2[i]);
+		
+	}
+		
+	for( int i=0;i<m;i++){
+		for(int j=i+1;j<m;j++){
+		
+			if(dado2[i] > dado2[j]){
+				 aux3 = dado2[i];
+             	dado2[i] = dado2[j];
+             	dado2[j] = aux3;
+            
+			}
+			
+		}
+	}
+
+for(int i =0; i<n;i++){
+	
+	int  comum = 0;
+	for(int j=0;j<m;j++){
+		
+		if(dado[i]==dado2[j]){
+		
+			comum= 1;
+		}
+	}
+	if(!comum){
+	
+			printf("%d ",dado[i]);
+	}	
+} 
+	
+		
+
+}
+
+
+at_01.cpp
+Exibindo at_01.cpp.
